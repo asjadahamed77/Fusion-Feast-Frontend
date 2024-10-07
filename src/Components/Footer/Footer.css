@@ -212,6 +212,8 @@ hr{
         flex-wrap: nowrap;
         align-items: center;
         text-align: center;
+        justify-content: center;
+        padding-top: 60px;
     }
     .footer-container-left, .footer-container-middle, .footer-container-middle-middle, .footer-container-right{
         width: 100%;
