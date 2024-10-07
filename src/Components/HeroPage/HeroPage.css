@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+}
+.hero-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh; /* Ensure it takes full viewport height */
+}
+
+.hero-page-image-container {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.hero-page-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-page-text-container {
+    position: absolute;
+    bottom: 180px;
+    z-index: 10;
+    text-align: center;
+}
+
+.hero-page-text-container p {
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-weight: 600;
+    color: gold;
+    text-shadow: red 1px 0 10px;
+    font-size: 24px;
+}
+
+.hero-page-text-container h1 {
+    color: #fff;
+    font-size: 140px;
+    text-shadow: red 1px 0 15px;
+}
+
+.hero-page-text-container span {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    text-shadow: red 1px 0 10px;
+}
+
+.hero-page-black-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 1025px) {
+    .hero-page-text-container p {
+        font-size: 20px;
+    }
+    .hero-page-text-container h1 {
+        font-size: 120px;
+    }
+    .hero-page-text-container {
+        bottom: 220px;
+    }
+}
+
+@media (max-width: 769px) {
+    .hero-page-text-container h1 {
+        font-size: 80px;
+    }
+    .hero-page-text-container p {
+        font-size: 18px;
+    }
+    .hero-page-text-container span {
+        font-size: 17px;
+    }
+    .hero-page-text-container {
+        bottom: 260px;
+    }
+}
+
+@media (max-width: 426px) {
+    .hero-page-text-container {
+        bottom: 350px;
+    }
+    .hero-page-text-container h1 {
+        font-size: 50px;
+    }
+    .hero-page-text-container p {
+        font-size: 12px;
+    }
+    .hero-page-text-container span {
+        font-size: 10px;
+    }
+}

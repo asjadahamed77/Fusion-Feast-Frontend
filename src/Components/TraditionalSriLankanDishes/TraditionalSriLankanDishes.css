@@ -1,0 +1,93 @@
+
+
+.traditional-dishes{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right,#0c1122,black);
+    padding: 100px;
+    margin-bottom: -120px;
+}
+.traditional-dishes-image{
+    display: flex;
+}
+.traditional-dishes-image img{
+    width: 40vw;
+}
+.traditional-dishes-container{
+    display: flex;
+    margin-top: 15px;
+    background: linear-gradient(to right,#F5F7F8,#F7F9F2);
+}
+.traditional-dishes-container-text h1{
+    text-shadow: #0c1122 1px 0 10px;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 600;
+}
+.traditional-dishes-container-text p{
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    text-shadow: red 1px 0 10px;
+    color: #555;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.traditional-dishes-container-about p{
+    font-weight: 500;
+    margin-top: 25px;
+    color: #555;
+}
+.fusion-feast-right{
+    padding: 60px;
+}
+@media(max-width:1025px){
+    .traditional-dishes-container{
+        flex-direction: column-reverse;
+    }
+    .traditional-dishes-container-text h1{
+        font-size: 45px;
+    }
+    .traditional-dishes-container-about p{
+        font-size: 15px;
+    }
+    .traditional-dishes-image img{
+        width: 100%;
+    }
+}
+@media(max-width:769px){
+    .traditional-dishes-container-text h1{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .traditional-dishes-container-about p{
+        font-size: 14px;
+    }
+    .fusion-feast-right{
+        padding: 35px;
+    }
+    .traditional-dishes-container{
+        margin-bottom: 50px;
+    }
+}
+@media(max-width:426px){
+    .traditional-dishes-container-text h1{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .traditional-dishes-container-about p{
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    .fusion-feast-right{
+        padding: 20px;
+    }
+    .traditional-dishes{
+        padding: 30px;
+    }
+    .traditional-dishes-container{
+        margin-top: 50px;
+    }
+    .traditional-dishes-container{
+        margin-bottom: 120px;
+    }
+}

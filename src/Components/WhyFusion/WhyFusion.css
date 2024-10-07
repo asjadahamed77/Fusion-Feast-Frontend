@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+.why-fusion{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px;
+    background: linear-gradient(to right,#0c1122,black);
+}
+.why-fusion-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.why-fusion-left p{
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-size: 22px;
+    color: white;
+    text-shadow: red 1px 0 10px;
+}
+.why-fusion-left h2{
+    font-size: 35px;
+    color: white;
+    margin-top: 25px;
+}
+.why-fusion-left span{
+    margin-top: 20px;
+    color: white;
+    font-weight: 500;
+}
+.why-fusion-left button{
+    margin-top: 25px;
+    width: 200px;
+    height: 45px;
+    border: none;
+    border-radius: 24px;
+    font-weight: 500;
+    font-size: 18px;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+}
+.why-fusion-left button:hover{
+   transform: scale(1.05);
+   background: #fff;
+   color: #0c1122;
+   transition: 0.5s;
+}
+.why-fusion-right{
+    width: 40%;
+}
+
+.why-fusion-right img{
+    width: 400px;
+    height: 300px;
+}
+
+@media(max-width:1025px){
+    .why-fusion-left p{
+        font-size: 20px;
+    }
+    .why-fusion-left h2{
+        font-size: 30px;
+        margin-top: 15px;
+    }
+    .why-fusion-left span{
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .why-fusion-left button{
+        font-size: 16px;
+        width: 180px;
+    }
+}
+@media(max-width:769px){
+    .why-fusion{
+        flex-direction: column;
+    }
+    .why-fusion-left{
+        width: 100%;
+    }
+    .why-fusion-right{
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    .why-fusion-right img{
+        width: 600px;
+        height: 400px;
+    }
+}
+@media(max-width:426px){
+    .why-fusion{
+        padding: 50px;
+        background: linear-gradient(#0c1122,black);
+    }
+    .why-fusion-right img{
+        width: 350px;
+        height: 250px;
+    }
+}

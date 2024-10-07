@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+.mouth-watering-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+    justify-content: center;
+    background: linear-gradient(to right,#0c1122,black);
+}
+.mouth-watering-menu-text{
+    text-align: center;
+    color: #fff;
+}
+.mouth-watering-menu-text p{
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    text-shadow: red 1px 0 10px;
+    font-size:24px ;
+    font-weight: 500;
+}
+.mouth-watering-menu-text h1{
+    text-shadow: red 1px 0 10px;
+    font-size: 50px;
+}
+.mouth-watering-menu-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 25px;
+    align-items: center;
+    margin: 40px auto;
+}
+.check-full-menu{
+    margin-top: 20px;
+    padding: 12px 24px;
+    color: #fff;
+    text-shadow: red 1px 0 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    border: 2px solid #fff;
+    border-radius: 50px;
+}
+.check-full-menu:hover{
+    padding: 12px 32px;
+    transition: 0.5s;
+}
+@media(max-width:1441px){
+    .mouth-watering-menu{
+        padding: 50px;
+    }
+}
+@media(max-width:1025px){
+    .mouth-watering-menu-items{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+@media(max-width:769px){
+    .mouth-watering-menu-text h1{
+        font-size: 40px;
+    }
+    .mouth-watering-menu-items{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media(max-width:426px){
+    .mouth-watering-menu{
+        padding: 10px;
+    }
+    .mouth-watering-menu-items{
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin: 20px auto;
+    }
+    .mouth-watering-menu-text h1{
+        font-size: 28px;
+    }
+    .mouth-watering-menu-text p{
+        font-size: 14px;
+        margin-top: 30px;
+    }
+    .check-full-menu{
+        font-size: 18px;
+        padding: 10px 22px;
+        margin-bottom: 30px;
+    }
+
+}

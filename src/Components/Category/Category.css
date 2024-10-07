@@ -1,0 +1,42 @@
+.category{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 3px solid #fff;
+    border-radius: 12px;
+    padding: 2px;
+    cursor: pointer;
+}
+.category-image{
+    display: flex;
+    align-items: center;
+}
+.category-image img{
+    width: 40px;
+    height: 40px;
+    border-radius: 12px 0 0 12px;
+}
+.category-name h4{
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: red 1px 0 10px;
+}
+.category:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+    box-shadow: red 1px 0 10px;
+}
+@media(max-width:426px){
+    .category{
+        gap: 10px;
+        border-radius: 6px;
+    }
+    .category-image img{
+        width: 25px;
+        height: 25px;
+    }
+    .category-name h4{
+        font-size: 12px;
+    }
+}

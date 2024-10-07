@@ -1,0 +1,99 @@
+.food-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 200px;
+    box-sizing: border-box;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 10px;
+  }
+  .food-items-image{
+    width: 100%;
+  }
+  .food-items-image img {
+    width: 100%;
+  }
+  
+  .food-items-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .food-items-bottom-count{
+    display: flex;
+    align-items: center;
+  }
+  .food-items-bottom-name-price{
+    display: flex;
+    flex-direction: column;
+  }
+  .food-items-bottom-name-price h4 {
+    font-size: 16px;
+    color: #fff;
+    text-shadow: red 1px 0 10px;
+    margin-top: 12px;
+  }
+  
+  .food-items-bottom-name-price p {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+  }
+  
+  .food-items-bottom-count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  .food-items-bottom-count button {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    box-shadow: red 1px 0 10px;
+    cursor: pointer;
+  }
+  
+  .food-items-count-items {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-around;
+    background: #1a3144;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    padding: 3px;
+  }
+  
+  .food-items-count-items-decrease, .food-items-count-items-increase {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+    font-weight: 600;
+    box-shadow: red 1px 0 10px;
+    cursor: pointer;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+  }
+  
+  .food-items-count-items-count {
+    width: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-shadow: red 1px 0 10px;
+  }
+  

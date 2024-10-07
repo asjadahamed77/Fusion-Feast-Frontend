@@ -1,0 +1,40 @@
+body{
+    background: linear-gradient(to right, #0c1122, black);
+    
+}
+.menu-page{
+    padding: 0 100px;
+}
+
+.menu-page-title h1{
+    text-shadow: red 1px 0 10px;
+  font-size: 50px;
+  color: #fff;
+}
+.menu-page-title hr{
+    height: 4px;
+    border: none;
+    outline: none;
+    width: 50px;
+    background: #fff;
+    box-shadow: red 0px 2px 4px;
+    border-radius: 50px;
+}
+@media(max-width:1441px){
+    .menu-page{
+        padding: 0 40px;
+    }
+}
+@media (max-width: 769px){
+    .menu-page-title h1{
+        font-size: 40px;
+    }
+}
+@media(max-width:426px){
+    .menu-page{
+        padding: 0 10px;
+    }
+    .menu-page-title h1{
+        font-size: 28px;
+    }
+}

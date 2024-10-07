@@ -1,0 +1,217 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    background: #fff;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+  
+  .navbar-logo img {
+    width: 220px;
+    cursor: pointer;
+    margin-left: 50px;
+    margin-top: 2px;
+    margin-bottom: -2px;
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar-right {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    margin-right: 50px;
+  }
+  
+  .nav-links .nav-link-items {
+    color: #070F2B;
+    font-weight: 500;
+    position: relative;
+    text-decoration: none;
+  }
+  
+  .nav-links .nav-link-items::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -3px;
+    left: 0;
+    background-color: #535C91;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .nav-links .nav-link-items:hover::after {
+    visibility: visible;
+    width: 100%;
+  }
+  
+  .nav-links .nav-link-items:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+  }
+  
+  .nav-links .active {
+    font-weight: bold;
+  }
+  
+  .close-icon {
+    display: none;
+    width: 30px;
+  }
+  
+  .order-online button {
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background: #1B1A55;
+    color: #fff;
+  }
+  
+  .order-online button:hover {
+    background: #3a3a87;
+    transition: 0.5s;
+  }
+  
+  .navbar-toggle img {
+    width: 30px;
+    display: none;
+    margin-left: 50px;
+    cursor: pointer;
+  }
+  
+  @media(max-width: 1025px) {
+    .nav-links .nav-link-items {
+      font-size: 14px;
+    }
+  
+    .order-online button {
+      width: 130px;
+      height: 35px;
+      font-size: 14px;
+    }
+  }
+  
+  @media(max-width: 769px) {
+    .navbar-logo img {
+      width: 200px;
+    }
+  
+    .nav-links {
+      display: none;
+    }
+  
+    .navbar-toggle img {
+      display: flex;
+      margin-left: -20px;
+    }
+  
+    .navbar-left {
+      flex: 1;
+      justify-content: space-evenly;
+    }
+  
+    .navbar-right.navbar-right-open .nav-links {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 300px;
+      z-index: 1001;
+      background-color: #070F2B; /* Ensure this background color is set */
+      padding: 20px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    }
+  
+    .navbar-right.navbar-right-open .nav-links li {
+      margin-top: 10px;
+      margin-left: 20px;
+      font-size: 20px;
+      color: #fff;
+    }
+  
+    .navbar-right.navbar-right-open .nav-links li:hover {
+      border-left: 3px solid #fff;
+      padding-left: 25px;
+      transition: 0.5s;
+    }
+  
+    .nav-links.nav-links-open .nav-link-items {
+      font-size: 18px;
+    }
+  
+    .nav-links .nav-link-items::after {
+      display: none;
+    }
+  
+    .nav-links .close-icon {
+      display: flex;
+      position: absolute;
+      right: 20px;
+      cursor: pointer;
+      width: 30px;
+    }
+  
+    .nav-links .close-icon:hover {
+      transform: scale(1.1);
+      transition: 0.5s;
+    }
+  
+    .nav-links img {
+      width: 30px;
+      margin-bottom: 20px;
+    }
+  
+    .nav-links-container {
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 50px;
+    }
+  
+    .nav-links.nav-links-open {
+      background-color: #070F2B; /* Set background color for the nav-links when open */
+    }
+  }
+  
+  @media(max-width: 426px) {
+    .navbar-logo img {
+      width: 150px;
+      margin-left: 0px;
+    }
+  
+    .order-online button {
+      font-size: 10px;
+      width: 100px;
+      margin-right: -30px;
+      height: 35px;
+    }
+  
+    .navbar-toggle img {
+      width: 25px;
+    }
+  }
+  

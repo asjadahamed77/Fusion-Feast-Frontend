@@ -1,0 +1,143 @@
+.testimonials {
+  margin-top: -20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px;
+  justify-content: center;
+  background: linear-gradient(to right, #0c1122, black);
+}
+
+.testimonials-text {
+  text-align: center;
+  color: #fff;
+}
+
+.testimonials-text p {
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  text-shadow: red 1px 0 10px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.testimonials-text h1 {
+  text-shadow: red 1px 0 10px;
+  font-size: 50px;
+}
+
+.testimonials-containers {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 50px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.testimonial {
+  padding: 25px;
+  transition: transform 0.3s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgb(247, 48, 48) 0px 6px 14px -18px inset;
+}
+
+.testimonial-scaled {
+  transform: scale(1.2);
+  box-shadow: #fff 0px 3px 8px;
+}
+
+.testimonial-image-name {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.testimonial-name h4 {
+  font-size: 18px;
+  text-shadow: red 1px 0 10px;
+  color: #F8EDED;
+}
+
+.testimonial-name p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  font-style: italic;
+}
+
+.testimonial-image img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial-review {
+  margin-top: 20px;
+}
+
+.testimonial-review span {
+  color: #FFF1DB;
+  font-size: 14px;
+}
+
+@media (max-width: 1441px) {
+  .testimonials {
+    padding: 50px;
+  }
+}
+
+@media (max-width: 769px) {
+  .testimonials-text h1 {
+    font-size: 40px;
+    line-height: 50px;
+    margin-top: 10px;
+  }
+
+  .testimonials-containers {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .testimonial {
+    width: calc(50% - 10px); /* 50% width for two columns */
+  }
+  .testimonial:hover{
+    background: linear-gradient(#0c1122, #134B70);
+    transform: scale(1.1);
+    box-shadow: #fff 0px 3px 8px;
+  }
+
+  .testimonial-scaled {
+
+    display: none;
+  }
+}
+
+@media (max-width: 426px) {
+  .testimonials-text h1 {
+    font-size: 28px;
+    line-height: 35px;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .testimonials-text p {
+    font-size: 14px;
+    margin-top: 25px;
+  }
+
+  .testimonials-containers {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial {
+    width: 100%; /* Full width for single column */
+    margin-bottom: 20px; /* Add some space between testimonials */
+  }
+
+  .testimonial-scaled {
+    transform: scale(1.1);
+  }
+}

@@ -1,0 +1,87 @@
+.offer-flavours{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+.offer-flavours-image{
+    width: 100%;
+    box-sizing: border-box;
+}
+.offer-flavours-image img{
+    width: 100%;
+}
+.offer-flavours-text{
+    position: absolute;  
+    width: 50%;
+    padding: 40px;
+    color: #fff;
+    z-index: 1;
+}
+.offer-flavours-text p{
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-size: 22px;
+    text-shadow: red 1px 0 10px;
+}
+.offer-flavours-text h1{
+    font-size: 55px;
+    margin-top: 25px;
+    text-shadow: red 1px 0 10px;
+    line-height: 60px;
+    margin-bottom: 25px;
+}
+.offer-flavours-text span{
+    margin-top: 25px;
+    color: #999;
+}
+
+.offer-flavours-bg-black{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.6);
+}
+@media(max-width:769px){
+    .offer-flavours-text p{
+        font: 20px;
+    }
+    .offer-flavours-text h1{
+        font-size: 45px;
+        line-height: 50px;
+        margin: 15px auto;
+    }
+    .offer-flavours-text span{
+        font-size: 12px;
+    }
+}
+@media(max-width:426px){
+    .offer-flavours{
+        align-items: start;
+    }
+    .offer-flavours-image img{
+        height: 60vh;
+    }
+    .offer-flavours-bg-black{
+        background: rgba(0,0,0,0.8);
+    }
+    .offer-flavours-text p{
+        font: 16px;
+    }
+    .offer-flavours-text h1{
+        font-size: 30px;
+        line-height: 40px;
+        margin: 15px auto;
+    }
+    .offer-flavours-text{
+        width: 100%;
+    }
+    .offer-flavours-text span{
+        line-height: 15px;
+        margin-left: 40px
+    }
+}

@@ -1,0 +1,115 @@
+.our-values {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+    justify-content: center;
+    background: linear-gradient(to right, #0c1122, black);
+  }
+  .our-values-text {
+    text-align: center;
+    color: #fff;
+  }
+  
+  .our-values-text p {
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    text-shadow: red 1px 0 10px;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  
+  .our-values-text h1 {
+    text-shadow: red 1px 0 10px;
+    font-size: 50px;
+  }
+  .our-values-containers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .our-values-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 300px;
+    gap: 30px;
+    text-align: center;
+    flex-basis: 22%;
+    box-shadow: #fff 0px 8px 12px;
+    background: linear-gradient(to right,#7E8EF1,#003285);
+    margin: 50px auto -20px;
+  }
+  .our-values-container:hover{
+    background: linear-gradient(#7E8EF1,#003285);
+    box-shadow: #A7E6FF 0px 19px 38px, #A7E6FF 0px 15px 12px;
+    transform: scale(1.05);
+    margin-bottom: 25px;
+    transition: 0.5s;
+  }
+  .our-values-container img{
+    width: 75px;
+  }
+  .our-values-container span{
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  @media(max-width:1025px){
+    .our-values{
+        padding: 50px;
+    }
+    .our-values-container span{
+        font-size: 14px;
+    }
+    .our-values-container img{
+        width: 60px;
+    }
+  }
+  @media(max-width:769px){
+    .our-values-containers{
+      margin-bottom: 40px;
+    }
+    .our-values-text h1 {
+        font-size: 40px;
+        line-height: 50px;
+        margin-top: 10px;
+      }
+    .our-values{
+        padding: 25px;
+    }
+    .our-values-containers{
+        gap: 10px;
+    }
+    .our-values-container{
+        height: 250px;
+        text-align: center;
+    }
+    .our-values-container span{
+        width: 60%;
+    }
+  }
+  @media(max-width:426px){
+    .our-values-text h1 {
+        font-size: 28px;
+    line-height: 35px;
+    margin-top: 10px;
+    width: 100%;
+    }
+    .our-values p{
+        font-size: 14px;
+        margin-top: 25px;
+    }
+    .our-values{
+        padding: 20px;
+    }
+    .our-values-containers{
+        margin-bottom: 60px;
+    }
+    .our-values-container{
+        flex-basis: 45%;
+    }
+  }

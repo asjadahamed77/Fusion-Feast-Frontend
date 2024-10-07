@@ -1,0 +1,188 @@
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px;
+  justify-content: center;
+  background: linear-gradient(to right, #0c1122, black);
+}
+.contact-us-container {
+  background: linear-gradient(to right, #FF8225, #FFB22C);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 800px;
+ margin-top: 40px;
+  border: 4px solid #973131;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.contact-us-container-text {
+  text-align: center;
+}
+
+.contact-us-container-text p {
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  text-shadow: black 1px 0 16px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #973131;
+  margin-top: 25px;
+}
+
+.contact-us-container-text h1 {
+  text-shadow: #973131 1px 0 10px;
+  font-size: 50px;
+  color: black;
+}
+.contact-us-container-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  gap: 30px;
+  width: 600px;
+}
+.contact-us-container-form-name-email,
+.contact-us-container-form-phone {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact-us-container-form-name-email input {
+  width: 40%;
+  border: none;
+  padding: 4px;
+  font-weight: 500;
+  background: transparent;
+  outline: none;
+  border-bottom: 3px solid black;
+}
+.contact-us-container-form-name-email input:hover {
+  border-bottom: 3px solid #973131;
+}
+.contact-us-container-form-phone input {
+  width: 40%;
+  border: none;
+  padding: 4px;
+  font-weight: 500;
+  background: transparent;
+  outline: none;
+  border-bottom: 3px solid black;
+}
+.contact-us-container-form-phone input:hover {
+  border-bottom: 3px solid #973131;
+}
+.contact-us-container-form-message input{
+    width: 100%;
+  border: none;
+  padding: 4px;
+  font-weight: 500;
+  background: transparent;
+  outline: none;
+  border-bottom: 3px solid black;
+}
+.contact-us-container-form-message input:hover{
+    border-bottom: 3px solid #973131;
+}
+.contact-us-container .contact-us-container-send-message button {
+  padding: 8px 22px;
+  border-radius: 4px;
+  border: none;
+  background: #973131;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}
+.contact-us-container .contact-us-container-send-message button:hover {
+  background: #9e4e4e;
+}
+.contact-us-container-form-name-email input::placeholder,
+.contact-us-container-form-phone input::placeholder,
+.contact-us-container-form-message input::placeholder {
+    color: #666;
+}
+
+@media (max-width: 769px) {
+  .contact-us-container {
+    width: 600px;
+    padding: 40px;
+  }
+  .contact-us-container-text p {
+    font-size: 20px;
+    margin-top: 5px;
+  }
+  .contact-us-container-text h1 {
+    font-size: 40px;
+  }
+  .contact-us-container-form-name-email,
+  .contact-us-container-form-phone {
+    margin: auto 15px;
+  }
+  .contact-us-container-form-message input{
+    width: 95%;
+    margin-left: 15px;
+  }
+
+  .contact-us-container-send-message {
+    margin: auto 15px;
+  }
+}
+@media (max-width: 426px) {
+  .contact-us-container {
+    width: 350px;
+    padding: 20px;
+   margin-top: 0px;
+  }
+  .contact-us-container-form {
+    margin-top: 20px;
+    gap: 10px;
+  }
+  .contact-us-container-text p {
+    font-size: 15px;
+    margin-top: 5px;
+  }
+
+  .contact-us-container-text h1 {
+    font-size: 25px;
+  }
+
+  .contact-us-container-form {
+    width: 100%;
+    padding: 0;
+  }
+
+  .contact-us-container-form-name-email,
+  .contact-us-container-form-phone {
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+    margin-left: 0px;
+    box-sizing: border-box;
+  }
+  .contact-us-container-form-message input{
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .contact-us-container-form-name-email input,
+  .contact-us-container-form-phone input {
+    width: 100%;
+    margin-bottom: 10px;
+    margin: 10px auto;
+  }
+
+  .contact-us-container-send-message {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .contact-us-container-send-message button {
+    width: 100%;
+    margin: 25px 0 15px;
+  }
+}
