@@ -221,6 +221,7 @@ hr{
     }
     .footer-bottom-items{
         flex-direction: column;
+        justify-content: center;
         gap: 10px;
     }
     .footer-container-right-input{
