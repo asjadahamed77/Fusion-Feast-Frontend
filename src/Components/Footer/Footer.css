@@ -197,6 +197,7 @@ hr{
     }
     .footer-container{
         padding: 20px;
+        padding-top: 60px;
     }
     .footer-container-left p, .footer-container-middle p, .footer-container-middle-middle p, .footer-container-right p{
         font-size: 14px;
