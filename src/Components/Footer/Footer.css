@@ -215,6 +215,7 @@ hr{
         text-align: center;
         justify-content: center;
         padding-top: 60px;
+        margin-bottom: 10px;
     }
     .footer-container-left, .footer-container-middle, .footer-container-middle-middle, .footer-container-right{
         width: 100%;
